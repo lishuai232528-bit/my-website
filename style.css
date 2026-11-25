@@ -1,0 +1,18 @@
+/* Colours and basic typography */
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, sans-serif; color: #3E2723; background: #F5EFE6; line-height: 1.6; }
+h1, h2, h3 { font-family: Georgia, serif; line-height: 1.2; margin: 0 0 16px; }
+h1 { font-size: 48px; } h2 { font-size: 32px; } h3 { font-size: 22px; }
+header { background: #3E2723; color: white; padding: 20px 6%; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 16px; }
+header a { color: white; text-decoration: none; } .brand { font: bold 24px Georgia, serif; }
+nav { display: flex; flex-wrap: wrap; gap: 24px; } nav a:hover { text-decoration: underline; }
+/* Page sections and images */
+section { padding: 64px 6%; } .split { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
+.hero { background: #F5EFE6; } #about, #contact { background: white; }
+img, video { width: 100%; display: block; border-radius: 12px; } .eyebrow { font-size: 13px; font-weight: bold; letter-spacing: 2px; color: #8B5E3C; }
+.button, button { display: inline-block; background: #8B5E3C; color: white; padding: 12px 22px; border: 0; border-radius: 6px; text-decoration: none; font: inherit; cursor: pointer; }
+.cards, .features { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; } article { background: white; border-radius: 12px; overflow: hidden; } article img { border-radius: 0; } article div { padding: 20px; } .features { margin-top: 32px; text-align: center; } .features span { font-size: 32px; }
+/* Contact form */
+form { display: grid; gap: 10px; } input, textarea { width: 100%; border: 1px solid #8B5E3C; border-radius: 5px; padding: 12px; font: inherit; } footer { background: #3E2723; color: white; text-align: center; padding: 24px; }
+/* Mobile layout */
+@media (max-width: 700px) { .split, .cards, .features { grid-template-columns: 1fr; } h1 { font-size: 36px; } section { padding: 40px 6%; } nav { gap: 16px; } }
